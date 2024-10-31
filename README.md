@@ -1,2 +1,2 @@
-# TWEB-Project1-ReceitasCulinaria
+# WebTechnologiesClass first project - Receitas de Culinária
 This is my first project for university. It was created using HTML and CSS. It's a recipe website that doesn't need JavaScript or Bootstrap to work the way I wanted.
