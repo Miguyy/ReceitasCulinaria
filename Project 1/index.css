@@ -1,0 +1,130 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #FFA500; /* Cor laranja clara */
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px 15px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+/* Seção de Destaques */
+.highlights {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.highlights h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card h3 {
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+/* Lista de Receitas */
+.recipe-list {
+    padding: 40px 20px;
+}
+
+.recipe-list h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-item img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.recipe-info h3 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
