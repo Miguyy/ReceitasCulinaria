@@ -13,7 +13,7 @@ body {
 
 /* Header */
 .header {
-    background-color: #ff8c00; /* Laranja vibrante */
+    background-color: #116B39; /* Laranja vibrante */
     color: white;
     padding: 20px;
     display: flex;
@@ -76,6 +76,11 @@ body {
     width: 300px;
     text-align: center;
     overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
 }
 
 .recipe-card img {
@@ -125,7 +130,7 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 2px solid #ff8c00; /* Borda laranja embaixo da imagem */
+    border-bottom: 2px solid #116B39; /* Borda laranja embaixo da imagem */
 }
 
 .recipe-info {
@@ -152,4 +157,68 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 0.9em;
+}
+
+.navegar {
+    background-color: #f9f9f9; /* Cor de fundo para o menu */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+
+.main-list {
+    list-style-type: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.item-list {
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+.item-list a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: black; /* Cor do texto do link */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.item-list svg {
+    vertical-align: middle; /* Alinha o SVG com o texto */
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+
+.recipe-detail_intructions{
+    column-gap: 64px;
+    flex-direction: row;
+}
+
+.recipe-ingredients{
+    max-width: 290px;
+    margin-bottom: 0px;
+}
+
+.recipe-ingredients_title{
+    margin-bottom: 24px;
+    font-family: "avenir", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height:38px;
+}
+
+.recipe-ingredients_list{
+    margin: 0;
+    border: 1px solid #116B39;
+    padding: 0;
+    list-style: none;
+    border-radius: 8px;
+    font-family: "avenir", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.recipe-ingredients_items{
+    padding: 8px 24px 8px 56px;
+    background-image: url(//sire-assets-natgeo.fichub.com/assets/24kitchen-v2/css/../images/icons/leaves.svg);
+    background-repeat: no-repeat;
+    background-position: 16px center;
 }
