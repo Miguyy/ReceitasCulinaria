@@ -10,10 +10,28 @@
     <title>Receitas de Culinária</title>
 </head>
 <body>
+
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-text">A carregar...</div>
+            <div class="spinner"></div>
+        </div>
+    </div>
+    
     <header class="header">
         <h1 class="header-title">Receitas de Culinária</h1>
         <div class="search-bar">
-            <input type="text" placeholder="Procure por receitas, ingredientes...">
+            <!-- Input com datalist para sugestões -->
+            <input type="text" placeholder="Procure por receitas, ingredientes..." list="recipe-list">
+            <datalist id="recipe-list">
+                <option value="Lasanha" target="http://127.0.0.1:5500/TWEB/Project%201/receita1.html">
+                <option value="Bolo de iogurte" target="http://127.0.0.1:5500/TWEB/Project%201/receita2.html">
+                <option value="Bacalhau com natas" target="http://127.0.0.1:5500/TWEB/Project%201/receita3.html">
+                <option value="Pastel de nata caseiro" target="http://127.0.0.1:5500/TWEB/Project%201/receita4.html">
+                <option value="Burritos" target="http://127.0.0.1:5500/TWEB/Project%201/receita5.html">
+                <option value="Carapau de corrida" target="http://127.0.0.1:5500/TWEB/Project%201/receita6.html">
+                <option value="Bolachas de Amendoim" target="http://127.0.0.1:5500/TWEB/Project%201/receita7.html">
+            </datalist>
             <button type="button">🔍</button>
         </div>
     </header>
@@ -26,11 +44,7 @@
                 <h3>Lasanha</h3>
             </div>
             <div class="recipe-card">
-                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita2.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2023/09/1.tecnicas-air-fryer.jpg" alt="Receita 2"></a>
-                <h3>Receitas na Air Fryer</h3>
-            </div>
-            <div class="recipe-card">
-                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita3.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2016/03/bolo-de-iogurte.jpeg" alt="Receita 3"></a>
+                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita2.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2016/03/bolo-de-iogurte.jpeg" alt="Receita 3"></a>
                 <h3>Bolo de iogurte</h3>
             </div>
         </div>
@@ -40,7 +54,7 @@
         <h2>Algumas Receitas</h2>
         <div class="recipe-grid">
             <div class="recipe-item">
-                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita4.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2015/09/bacalhau-com-natas.jpeg" alt="Bacalhau com natas"></a>
+                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita3.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2015/09/bacalhau-com-natas.jpeg" alt="Bacalhau com natas"></a>
                 <div class="recipe-info">
                     <h3>Bacalhau com natas</h3>
                     <hr>
@@ -48,7 +62,7 @@
                 </div>
             </div>
             <div class="recipe-item">
-                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita5.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2017/04/pastel-de-nata-caseiro.jpg" alt="Pastel de nata caseiro"></a>
+                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita4.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2017/04/pastel-de-nata-caseiro.jpg" alt="Pastel de nata caseiro"></a>
                 <div class="recipe-info">
                     <h3>Pastel de nata caseiro</h3>
                     <hr>
@@ -56,7 +70,7 @@
                 </div>
             </div>
             <div class="recipe-item">
-                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita6.html" target="_self"><img src="https://sire-media-foxpt.fichub.com/24k_pt/recipe-image/698786.640x360.webp" alt="Burritos"></a>
+                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita5.html" target="_self"><img src="https://sire-media-foxpt.fichub.com/24k_pt/recipe-image/698786.640x360.webp" alt="Burritos"></a>
                 <div class="recipe-info">
                     <h3>Burritos</h3>
                     <hr>
@@ -64,7 +78,7 @@
                 </div>
             </div>
             <div class="recipe-item">
-                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita7.html" target="_self"><img src="https://sire-media-foxpt.fichub.com/24k_pt/recipe-image/698794.640x360.webp" alt="Carapau de corrida"></a>
+                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita6.html" target="_self"><img src="https://sire-media-foxpt.fichub.com/24k_pt/recipe-image/698794.640x360.webp" alt="Carapau de corrida"></a>
                 <div class="recipe-info">
                     <h3>Carapau de corrida</h3>
                     <hr>
@@ -72,7 +86,7 @@
                 </div>
             </div>
             <div class="recipe-item">
-                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita8.html" target="_self"><img src="https://sire-media-foxpt.fichub.com/24k_pt/recipe-image/698788.640x360.webp" alt="Bolachas de Amendoim"></a>
+                <a href="http://127.0.0.1:5500/TWEB/Project%201/receita7.html" target="_self"><img src="https://sire-media-foxpt.fichub.com/24k_pt/recipe-image/698788.640x360.webp" alt="Bolachas de Amendoim"></a>
                 <div class="recipe-info">
                     <h3>Bolachas de Amendoim</h3>
                     <hr>
