@@ -21,18 +21,21 @@
     <header class="header">
         <h1 class="header-title">Receitas de Culinária</h1>
         <div class="search-bar">
-            <!-- Input com datalist para sugestões -->
-            <input type="text" placeholder="Procure por receitas, ingredientes..." list="recipe-list">
-            <datalist id="recipe-list">
-                <option value="Lasanha" target="http://127.0.0.1:5500/TWEB/Project%201/receita1.html">
-                <option value="Bolo de iogurte" target="http://127.0.0.1:5500/TWEB/Project%201/receita2.html">
-                <option value="Bacalhau com natas" target="http://127.0.0.1:5500/TWEB/Project%201/receita3.html">
-                <option value="Pastel de nata caseiro" target="http://127.0.0.1:5500/TWEB/Project%201/receita4.html">
-                <option value="Burritos" target="http://127.0.0.1:5500/TWEB/Project%201/receita5.html">
-                <option value="Carapau de corrida" target="http://127.0.0.1:5500/TWEB/Project%201/receita6.html">
-                <option value="Bolachas de Amendoim" target="http://127.0.0.1:5500/TWEB/Project%201/receita7.html">
-            </datalist>
-            <button type="button">🔍</button>
+            <!-- Formulário para redirecionar para a receita selecionada -->
+            <form action="" method="get">
+                <select name="recipe" class="recipe-select">
+                    <option value="" disabled selected>Escolha uma receita...</option>
+                    <option value="http://127.0.0.1:5500/TWEB/Project%201/receita1.html">Lasanha</option>
+                    <option value="http://127.0.0.1:5500/TWEB/Project%201/receita2.html">Bolo de iogurte</option>
+                    <option value="http://127.0.0.1:5500/TWEB/Project%201/receita3.html">Bacalhau com natas</option>
+                    <option value="http://127.0.0.1:5500/TWEB/Project%201/receita4.html">Pastel de nata caseiro</option>
+                    <option value="http://127.0.0.1:5500/TWEB/Project%201/receita5.html">Burritos</option>
+                    <option value="http://127.0.0.1:5500/TWEB/Project%201/receita6.html">Carapau de corrida</option>
+                    <option value="http://127.0.0.1:5500/TWEB/Project%201/receita7.html">Bolachas de Amendoim</option>
+                </select>
+                <!-- Botão de pesquisa -->
+                <button type="submit" class="search-button">🔍</button>
+            </form>
         </div>
     </header>
 

@@ -70,56 +70,80 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f4f8; /* Cor de fundo mais suave */
     color: #333;
-    padding-top: 80px;
+    padding-top: 80px; /* Mantém o espaço necessário para o header fixo */
 }
 
-/* Estilo para o cabeçalho */
 .header {
-    background-color: #116B39;
-    color: white;
-    padding: 20px;
     display: flex;
+    justify-content: space-between; /* Alinha os itens nas extremidades */
     align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;  /* Menor padding para reduzir a altura */
+    background-color: #f8fafc;  /* Cor de fundo suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;  /* Fixa o header no topo */
+    top: 0;  /* Fixa no topo */
+    left: 0;  /* Fixa à esquerda */
+    right: 0;  /* Fixa à direita */
+    z-index: 1000;  /* Garante que o header fique sobre outros elementos */
+    width: 100%;  /* O header ocupa toda a largura da tela */
+    height: auto;  /* Altura automática para ajustar ao conteúdo */
 }
 
+/* Estilo do título */
 .header-title {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.2rem;
+    color: #333;
+    margin: 0;
+    flex-shrink: 0;  /* Impede que o título encolha */
 }
 
-/* Estilos para a barra de pesquisa */
+/* Estilo da barra de pesquisa */
 .search-bar {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    gap: 15px;
 }
 
-/* Input de pesquisa */
-.search-bar input[type="text"] {
-    padding: 10px 15px;
-    border-radius: 20px 0 0 20px;
-    border: none;
+/* Estilo do select */
+.recipe-select {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
     outline: none;
-    width: 250px;
+    width: 300px;
     background-color: #fff;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Botão de pesquisa */
-.search-bar button {
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 0 20px 20px 0;
+/* Efeito de hover e focus do select */
+.recipe-select:hover, .recipe-select:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Estilo do botão */
+.search-button {
+    padding: 12px 18px;
+    font-size: 1.2rem;
     cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito de hover do botão */
+.search-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Efeito de foco do botão */
+.search-button:focus {
+    outline: none;
 }
 
 /* Destaque */
