@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <!-- Definindo a codificação de caracteres para UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Definindo a escala para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descrição do site para motores de busca -->
     <meta name="description" content="Receitas de Culinária">
+    <!-- Palavras-chave para SEO -->
     <meta name="keywords" content="Receitas">
+    <!-- Autor do site -->
     <meta name="author" content="Miguel Machado">
+    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="Project1.css">
+    <!-- Título da página -->
     <title>Receitas de Culinária</title>
 </head>
 <body>
 
+    <!-- Tela de carregamento enquanto o conteúdo carrega -->
     <div class="loading-screen">
         <div class="loading-content">
             <div class="loading-text">A carregar...</div>
-            <div class="spinner"></div>
+            <div class="spinner"></div> <!-- Animação de carregamento -->
         </div>
     </div>
     
+    <!-- Cabeçalho da página -->
     <header class="header">
         <h1 class="header-title">Receitas de Culinária</h1>
         <div class="search-bar">
-            <!-- Formulário para redirecionar para a receita selecionada -->
+            <!-- Formulário de pesquisa para selecionar a receita -->
             <form action="" method="get">
+                <!-- Caixa de seleção de receitas -->
                 <select name="recipe" class="recipe-select">
                     <option value="" disabled selected>Escolha uma receita...</option>
                     <option value="http://127.0.0.1:5500/TWEB/Project%201/receita1.html">Lasanha</option>
@@ -39,9 +49,11 @@
         </div>
     </header>
 
+    <!-- Seção de receitas em destaque -->
     <section class="highlights">
         <h2>Receitas em Destaque</h2>
         <div class="recipe-cards">
+            <!-- Card para cada receita em destaque -->
             <div class="recipe-card">
                 <a href="http://127.0.0.1:5500/TWEB/Project%201/receita1.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2015/03/lasanha.jpeg" alt="Receita 1"></a>
                 <h3>Lasanha</h3>
@@ -53,9 +65,11 @@
         </div>
     </section>
     
+    <!-- Seção de lista com algumas receitas -->
     <section class="recipe-list">
         <h2>Algumas Receitas</h2>
         <div class="recipe-grid">
+            <!-- Cada receita é apresentada em um item da lista -->
             <div class="recipe-item">
                 <a href="http://127.0.0.1:5500/TWEB/Project%201/receita3.html" target="_self"><img src="https://www.pingodoce.pt/wp-content/uploads/2015/09/bacalhau-com-natas.jpeg" alt="Bacalhau com natas"></a>
                 <div class="recipe-info">
@@ -99,7 +113,9 @@
         </div>
     </section>
 
+    <!-- Rodapé da página -->
     <footer class="footer">
+        <!-- Texto do rodapé -->
         <p>&copy; Receitas de Culinária - Projecto 1 de TWEB 2024</p>
     </footer>
 </body>

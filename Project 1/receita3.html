@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Definindo a codificação de caracteres para UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Definindo a escala para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descrição do site para motores de busca -->
     <meta name="description" content="Receitas de Culinária">
+    <!-- Palavras-chave para SEO -->
     <meta name="keywords" content="Receitas">
+    <!-- Autor do site -->
     <meta name="author" content="Miguel Machado">
+    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="Project1.css">
+    <!-- Título da página -->
     <title>Receitas de Culinária</title>
 </head>
 <body>
+    <!-- Tela de carregamento enquanto o conteúdo carrega -->
     <div class="loading-screen">
         <div class="loading-content">
             <div class="loading-text">A carregar...</div>
-            <div class="spinner"></div>
+            <div class="spinner"></div> <!-- Animação de carregamento -->
         </div>
     </div>
+
+    <!-- Cabeçalho da página -->
     <header class="header">
         <h1 class="header-title">Receitas de Culinária</h1>
     </header>
+
+    <!-- Seção de navegação -->
     <section>
         <nav class="navegar">
+            <!-- Lista de navegação -->
             <ul class="main-list">
+                <!-- Item de navegação para ir para a página inicial -->
                 <li class="item-list">
                     <a href="http://127.0.0.1:5500/TWEB/Project%201/Project1.html" class="home_link">Home</a>
                 </li>
+                <!-- Item de navegação para a receita de Bacalhau com Natas -->
                 <li class="item-list">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.98985 7.01056L3.15002 12.8491L3.93121 13.65L10.5918 7.01056L3.93121 0.350024L3.15002 1.14966L8.98985 7.01056Z" fill="black"></path>
@@ -34,8 +49,11 @@
             </ul>
         </nav>
     </section>
+
+    <!-- Seção de vídeo da receita de Bacalhau com Natas -->
     <section class="video-section">
         <div class="video-container">
+            <!-- Incorporação de vídeo do YouTube para a receita -->
             <iframe
                 src="https://www.youtube-nocookie.com/embed/bkd6j_v4TlM"
                 frameborder="0"
@@ -44,12 +62,16 @@
                 class="top-video">
             </iframe>
         </div>
-    </section>    
+    </section>
+
+    <!-- Seção de detalhes da receita -->
     <section class="recipe-detail_section">
         <div class="recipe-detail_instructions">
+            <!-- Seção de ingredientes para a receita de Bacalhau com Natas -->
             <div class="recipe-ingredients">
                 <h3 class="recipe-ingredients_title">Ingredientes</h3>
                 <ul class="recipe-ingredients_list">
+                    <!-- Lista de ingredientes principais da receita -->
                     <li class="recipe-ingredients_items">Batata - 500g</li>
                     <li class="recipe-ingredients_items">Bacalhau (postas) - 2 unid.</li>
                     <li class="recipe-ingredients_items">Azeite - 100ml</li>
@@ -64,6 +86,7 @@
                 <br>
                 <h3 class="recipe-ingredients_title">Para o béchamel</h3>
                 <ul class="recipe-ingredients_list">
+                    <!-- Lista de ingredientes para o molho béchamel -->
                     <li class="recipe-ingredients_items">Manteiga - 40 g</li>
                     <li class="recipe-ingredients_items">Farinha - 40 g</li>
                     <li class="recipe-ingredients_items">Leite - 2,5 dl</li>
@@ -73,9 +96,12 @@
                     <li class="recipe-ingredients_items">Noz-moscada - q.b.</li>
                 </ul>
             </div>
+
+            <!-- Seção de preparação (passos) da receita -->
             <div class="recipe-steps">
                 <h3 class="recipe-steps_title">Preparação</h3>
                 <ul class="recipe-steps_list">
+                    <!-- Passos detalhados para preparar o Bacalhau com Natas -->
                     <li class="recipe-steps-items">1. Pré-aqueça o forno a 220 ºC.</li>
                     <li class="recipe-steps-items">2. Corte as batatas em cubos e frite-as em azeite.</li>
                     <li class="recipe-steps-items">3. Coloque o bacalhau num tacho com uma folha de louro e cubra-o com água. Leve-o a cozinhar em lume alto e quando levantar fervura baixe o lume e cozinhe durante 5 minutos.</li>
@@ -91,7 +117,9 @@
         </div>
     </section>
 
+    <!-- Rodapé da página -->
     <footer class="footer">
+        <!-- Texto do rodapé -->
         <p>&copy; Receitas de Culinária - Projecto 1 de TWEB 2024</p>
     </footer>
 </body>

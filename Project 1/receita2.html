@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Definindo a codificação de caracteres para UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Definindo a escala para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descrição do site para motores de busca -->
     <meta name="description" content="Receitas de Culinária">
+    <!-- Palavras-chave para SEO -->
     <meta name="keywords" content="Receitas">
+    <!-- Autor do site -->
     <meta name="author" content="Miguel Machado">
+    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="Project1.css">
+    <!-- Título da página -->
     <title>Receitas de Culinária</title>
 </head>
 <body>
+    <!-- Tela de carregamento enquanto o conteúdo carrega -->
     <div class="loading-screen">
         <div class="loading-content">
             <div class="loading-text">A carregar...</div>
-            <div class="spinner"></div>
+            <div class="spinner"></div> <!-- Animação de carregamento -->
         </div>
     </div>
+
+    <!-- Cabeçalho da página -->
     <header class="header">
         <h1 class="header-title">Receitas de Culinária</h1>
     </header>
+
+    <!-- Seção de navegação -->
     <section>
         <nav class="navegar">
+            <!-- Lista de navegação -->
             <ul class="main-list">
+                <!-- Item de navegação para ir para a página inicial -->
                 <li class="item-list">
                     <a href="http://127.0.0.1:5500/TWEB/Project%201/Project1.html" class="home_link">Home</a>
                 </li>
+                <!-- Item de navegação para a receita de Bolo de Iogurte com ícone SVG -->
                 <li class="item-list">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.98985 7.01056L3.15002 12.8491L3.93121 13.65L10.5918 7.01056L3.93121 0.350024L3.15002 1.14966L8.98985 7.01056Z" fill="black"></path>
@@ -34,16 +49,23 @@
             </ul>
         </nav>
     </section>
+
+    <!-- Seção de imagem com a receita de Bolo de Iogurte -->
     <section class="image-section">
         <div class="image-container">
+            <!-- Imagem principal da receita de Bolo de Iogurte -->
             <img src="https://www.pingodoce.pt/wp-content/uploads/2016/03/bolo-de-iogurte.jpeg" alt="Receita" class="top-image">
         </div>
     </section>
+
+    <!-- Seção de detalhes da receita -->
     <section class="recipe-detail_section">
         <div class="recipe-detail_instructions">
+            <!-- Seção de ingredientes da receita -->
             <div class="recipe-ingredients">
                 <h3 class="recipe-ingredients_title">Ingredientes</h3>
                 <ul class="recipe-ingredients_list">
+                    <!-- Lista de ingredientes para a receita de Bolo de Iogurte -->
                     <li class="recipe-ingredients_items">Manteiga (para untar) - 1 q.b.</li>
                     <li class="recipe-ingredients_items">Iogurte natural - 1 unid.</li>
                     <li class="recipe-ingredients_items">Ovo M - 4 unid.</li>
@@ -54,9 +76,12 @@
                     <li class="recipe-ingredients_items">Açúcar em pó - 2 c. de sopa</li>
                 </ul>
             </div>
+
+            <!-- Seção de passos de preparação da receita -->
             <div class="recipe-steps">
                 <h3 class="recipe-steps_title">Preparação</h3>
                 <ul class="recipe-steps_list">
+                    <!-- Passos detalhados para preparar o Bolo de Iogurte -->
                     <li class="recipe-steps-items">1. Pre-aqueça o forno a 180 ºC.</li>
                     <li class="recipe-steps-items">2. Unte uma forma de chaminé com manteiga e reserve.</li>
                     <li class="recipe-steps-items">3. Numa taça, junte o iogurte e os ovos. Utilize a medida do copo de iogurte e adicione o açúcar, o óleo, a farinha e o fermento.</li>
@@ -69,7 +94,9 @@
         </div>
     </section>
 
+    <!-- Rodapé da página -->
     <footer class="footer">
+        <!-- Texto do rodapé -->
         <p>&copy; Receitas de Culinária - Projecto 1 de TWEB 2024</p>
     </footer>
     
