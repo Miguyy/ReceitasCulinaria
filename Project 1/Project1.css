@@ -106,6 +106,58 @@ body {
     gap: 15px; /* Espaçamento entre os elementos */
 }
 
+/* Estilo do Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50; /* Cor do botão (verde suave) */
+    color: white;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropbtn i {
+    margin-left: 8px; /* Espaço entre o texto e a seta */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Fundo branco para os links */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #ddd; /* Bordas suaves */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.dropdown-content a {
+    color: #333; /* Texto escuro */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Cor de fundo ao passar o rato */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #45a049; /* Cor do botão ao passar o rato */
+}
+
 /* Estilo do select */
 .recipe-select {
     padding: 12px 20px; /* Espaçamento interno */
@@ -432,4 +484,6 @@ body {
     border: none; /* Sem borda */
     border-radius: 10px; /* Bordas arredondadas */
 }
+
+
 
