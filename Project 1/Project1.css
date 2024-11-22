@@ -148,24 +148,6 @@ body {
     background-color: #45a049; /* Cor do botão ao passar o rato */
 }
 
-/* Estilo do select */
-.recipe-select {
-    padding: 12px 20px; /* Espaçamento interno */
-    font-size: 1rem; /* Tamanho da fonte */
-    border: 2px solid #ddd; /* Borda cinza */
-    border-radius: 8px; /* Borda arredondada */
-    outline: none; /* Remove a borda de foco padrão */
-    width: 300px; /* Largura do select */
-    background-color: #fff; /* Fundo branco */
-    transition: border 0.3s ease, box-shadow 0.3s ease; /* Transição suave para borda e sombra */
-}
-
-/* Efeito de hover e focus do select */
-.recipe-select:hover, .recipe-select:focus {
-    border-color: #4caf50; /* Cor da borda em hover/focus */
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3); /* Sombra verde */
-}
-
 /* Estilo do botão */
 .search-button {
     padding: 12px 18px; /* Espaçamento interno */
