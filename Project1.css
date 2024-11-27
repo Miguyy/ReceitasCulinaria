@@ -6,16 +6,16 @@
     width: 100%; /* Largura total da tela */
     height: 100%; /* Altura total da tela */
     background-color: #ffffff; /* Cor de fundo branca */
-    display: flex; /* Utiliza flexbox para centralizar o conteúdo */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
-    z-index: 9999; /* Coloca a tela de carregamento acima dos outros elementos */
-    animation: fadeIn 1s ease-in, fadeOut 1s ease-out forwards 3s; /* Animações de entrada e saída */
+    z-index: 9999; /* Coloca a tela de carregamento acima de outros elementos */
+    animation: fadeIn 1s ease-in, fadeOut 1s ease-out forwards 3s; /* Animações para a entrada e saída */
 }
 
 /* Conteúdo central da animação */
 .loading-content {
-    display: flex; /* Utiliza flexbox para alinhar elementos verticalmente */
+    display: flex; /* Usa flexbox para empilhar elementos verticalmente */
     flex-direction: column; /* Alinha os elementos em coluna */
     align-items: center; /* Centraliza os elementos */
 }
@@ -23,7 +23,7 @@
 /* Texto de carregamento */
 .loading-text {
     font-size: 2em; /* Tamanho da fonte grande */
-    margin-bottom: 20px; /* Espaçamento abaixo */
+    margin-bottom: 20px; /* Espaço inferior */
 }
 
 /* Spinner de carregamento */
@@ -43,11 +43,10 @@
     }
 }
 
-/* Animação de desaparecer */
 @keyframes fadeOut {
     to {
-        opacity: 0; /* Fica invisível */
-        visibility: hidden; /* Remove da visibilidade */
+        opacity: 0; /* Desaparece */
+        visibility: hidden; /* Fica invisível */
     }
 }
 
@@ -62,14 +61,13 @@ body {
     font-family: 'Arial', sans-serif; /* Define a fonte padrão */
     background-color: #f0f4f8; /* Cor de fundo suave */
     color: #333; /* Cor do texto */
-    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+    padding-top: 80px; /* Espaço para o header fixo */
 }
 
-/* Cabeçalho */
 .header {
     display: flex; /* Flexbox para layout */
     justify-content: space-between; /* Itens alinhados nas extremidades */
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center; /* Centralização vertical */
     padding: 20px 30px; /* Espaçamento interno */
     background-color: #f8fafc; /* Cor de fundo suave */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
@@ -82,7 +80,7 @@ body {
     height: auto; /* Altura automática */
 }
 
-/* Estilo do título do cabeçalho */
+/* Estilo do título */
 .header-title {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fontes alternativas */
     font-size: 2.2rem; /* Tamanho do texto */
@@ -91,14 +89,14 @@ body {
     flex-shrink: 0; /* Impede que o título reduza de tamanho */
 }
 
-/* Barra de pesquisa */
+/* Estilo da barra de pesquisa */
 .search-bar {
     display: flex; /* Exibe os elementos em linha */
     align-items: center; /* Alinha verticalmente ao centro */
     gap: 15px; /* Espaçamento entre os elementos */
 }
 
-/* Estilo do dropdown */
+/* Estilo do Dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -115,7 +113,7 @@ body {
 }
 
 .dropbtn i {
-    margin-left: 8px; /* Espaço entre o texto e o ícone */
+    margin-left: 8px; /* Espaço entre o texto e a seta */
 }
 
 .dropdown-content {
@@ -123,7 +121,7 @@ body {
     position: absolute;
     background-color: #ffffff; /* Fundo branco para os links */
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border: 1px solid #ddd; /* Bordas suaves */
     border-radius: 4px; /* Bordas arredondadas */
@@ -150,11 +148,11 @@ body {
     background-color: #45a049; /* Cor do botão ao passar o rato */
 }
 
-/* Estilo do botão de pesquisa */
+/* Estilo do botão */
 .search-button {
     padding: 12px 18px; /* Espaçamento interno */
     font-size: 1.2rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para pointer */
+    cursor: pointer; /* Cursor pointer */
     border: none; /* Sem borda */
     border-radius: 8px; /* Bordas arredondadas */
     background-color: #4caf50; /* Cor de fundo verde */
@@ -162,18 +160,18 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
 }
 
-/* Efeito de hover no botão */
+/* Efeito de hover do botão */
 .search-button:hover {
     background-color: #45a049; /* Cor mais escura em hover */
     transform: scale(1.05); /* Aumenta ligeiramente */
 }
 
-/* Efeito de foco no botão */
+/* Efeito de foco do botão */
 .search-button:focus {
     outline: none; /* Remove o contorno padrão */
 }
 
-/* Destaques */
+/* Destaque */
 .highlights {
     padding: 40px 20px; /* Espaçamento interno */
     text-align: center; /* Texto centralizado */
@@ -182,9 +180,8 @@ body {
 
 .highlights h2 {
     font-size: 2.5em; /* Tamanho do título */
-    margin-bottom: 20px; /* Espaçamento abaixo */
+    margin-bottom: 20px; /* Espaço inferior */
 }
-
 
 /* Cards de receitas */
 .recipe-cards {
